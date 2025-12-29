@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Select Date & Time</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="phoneFrame">
+        <div class="app">
+            <header class="topbar">
+                <a class="iconBtn linkBtn" href="index.html" aria-label="Back">
+                    <span class="backArrow"></span>
+                </a>
+                <div class="topTitle">Select Date &amp; Time</div>
+                <div class="topRight"></div>
+            </header>
+            <main class="page">
+                <section class="bookingBlock">
+                    <div class="smallLabel">Booking for</div>
+                    <div class="roomName">Room 3.07</div>
+                    <div class="steps">
+                        <div class="step stepActive">1</div>
+                        <div class="stepLine"></div>
+                        <div class="step stepOff">2</div>
+                        <div class="stepLine"></div>
+                        <div class="step stepOff">3</div>
+                    </div>
+                    <div class="picked">
+                        Selected date:
+                        <span id="pickedDate">none</span>
+                        <span class="pickedSep">|</span> Selected time:
+                        <span id="pickedTime">none</span>
+                    </div>
+                </section>
+                <div class="sectionTitle">Choose a Date</div>
+                <section class="card calendarCard">
+                    <div class="calHeader">
+                        <button class="calNav" type="button" aria-label="Previous month"></button>
+                        <div class="calMonth">November 2025</div>
+                        <button class="calNav" type="button" aria-label="Next month"></button>
+                    </div>
+                    <div class="dowRow">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="dateGrid">
+                        <div class="blank"></div>
+                        <div class="blank"></div>
+                        <div class="blank"></div>
+                        <div class="blank"></div>
+                        <div class="blank"></div>
+                        <div class="blank"></div>
+                        <button class="day inactive" type="button">1</button>
+                        <button class="day inactive" type="button">2</button>
+                        <button class="day inactive" type="button">3</button>
+                        <button class="day inactive" type="button">4</button>
+                        <button class="day inactive" type="button">5</button>
+                        <button class="day inactive" type="button">6</button>
+                        <button class="day inactive" type="button">7</button>
+                        <button class="day inactive" type="button">8</button>
+                        <button class="day inactive" type="button">9</button>
+                        <button class="day" type="button">10</button>
+                        <button class="day" type="button">11</button>
+                        <button class="day" type="button">12</button>
+                        <button class="day" type="button">13</button>
+                        <button class="day" type="button">14</button>
+                        <button class="day" type="button">15</button>
+                        <button class="day" type="button">16</button>
+                        <button class="day" type="button">17</button>
+                        <button class="day" type="button">18</button>
+                        <button class="day" type="button">19</button>
+                        <button class="day" type="button">20</button>
+                        <button class="day" type="button">21</button>
+                        <button class="day" type="button">22</button>
+                        <button class="day" type="button">23</button>
+                        <button class="day" type="button">24</button>
+                        <button class="day" type="button">25</button>
+                        <button class="day" type="button">26</button>
+                        <button class="day" type="button">27</button>
+                        <button class="day" type="button">28</button>
+                        <button class="day" type="button">29</button>
+                        <button class="day" type="button">30</button>
+                    </div>
+                </section>
+                <div class="timeHeader">
+                    <div class="sectionTitle">Choose Time Slot</div>
+                    <div class="legend">
+                        <span class="legendDot"></span>
+                        <span>Booked</span>
+                    </div>
+                </div>
+                <section class="card">
+                    <div class="slotsGrid">
+                        <a class="slotBtn" href="#" data-time="8am-10am">8am-10am</a>
+                        <a class="slotBtn" href="#" data-time="10am-12pm">10am-12pm</a>
+                        <a class="slotBtn slotDisabled" href="#" data-time="12pm-2pm">12pm-2pm</a>
+                        <a class="slotBtn slotDisabled" href="#" data-time="2pm-4pm">2pm-4pm</a>
+                        <a class="slotBtn slotDisabled" href="#" data-time="4pm-6pm">4pm-6pm</a>
+                        <a class="slotBtn" href="#" data-time="6pm-8pm">6pm-8pm</a>
+                        <a class="slotBtn" href="#" data-time="8pm-10pm">8pm-10pm</a>
+                    </div>
+                </section>
+                <button class="btnNext" id="nextBtn" type="button" disabled>
+                    Next
+                </button>
+                <div class="msg" id="msg"></div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html
